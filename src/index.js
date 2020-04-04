@@ -9,7 +9,8 @@ textButton.addEventListener('click', text)
 
 function text(){
     let inputText = document.getElementById("message").value; //criei uma função que pega o valor da tag
-    alert(inputText)
+    let stringLenght = inputText.length
+    alert("O tamanho da sua string é " + stringLenght)
 }
 
 
@@ -38,3 +39,4 @@ buttonDecipher.addEventListener('click', function decipher(){
     return decifrarBotao;
 })
 
+/* usar animação para a caixa de resposta (easy out) */

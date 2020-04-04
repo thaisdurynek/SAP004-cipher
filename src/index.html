@@ -6,14 +6,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div id="root">
-        <h1>Join the Resistance!</h1>
-      </div>
-    </header>
-
     <section>
 
+      <header id=textHeader>
+        <h1>Join The Resistance!</h1>
         <p>
             Saudações, jovem Padawan! <br>
             A sociedade está sendo governada por um líder totalitário com 
@@ -25,31 +21,28 @@
             outro membro da resistência. MAY THE FORCE BE WITH YOU! 
         </p>
 
-        <form>
-            <label>Bilhete<br>
-              <input type="text" id="message" name="msg" required>
-              <button id="buttonText">Enviar</button>
-            </label>
-        </form>
-    
-        <form>
-            <label>Qual é a chave? <br>
-                <input type="number" id="offset" name="offset" required>
-                <button id="buttonOffset">Enviar</button>
-            </label>
-        </form>
+      </header>
 
         <form>
-            <label>Você gostaria de cifrar ou decifrar a mensagem? <br>
-                <button id="buttonOne">Cifrar</button>
-                <button id="buttonTwo">Decifrar</button>
+            <label>Bilhete <br>
+              <input type="text" id="message" name="msg" required><br>
+              <!--<button id="buttonText">Enviar</button>-->
             </label>
+        
+            <label>Qual é a chave? <br>
+                <input type="number" id="offset" name="offset" required><br>
+                <!--<button id="buttonOffset">Enviar</button>-->
+            </label>
+    
+            <button id="buttonOne">Cifrar</button>
+            <button id="buttonTwo">Decifrar</button>
+            
         </form>
       
     </section>
 
     <footer>
-      <p>&copy; Aliança Rebelde</p>
+      
     </footer>
     <script src="index.js" type="module"></script>
 
