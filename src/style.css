@@ -34,8 +34,9 @@ input {
 }
 
 input:focus {
-    color: white;
-    border: 1px solid rgba(97, 45, 97, 0.596);
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid rgba(97, 45, 97, 0.596);
 }
 
 button {
