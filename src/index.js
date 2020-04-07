@@ -5,23 +5,23 @@ import cipher from './cipher.js';
 Utilizei as variáveis para fazer um eventListener. Dentro de cada função eu vou
 tentar chamar as funções cipher e decipher no chipher.js */
 
-const inputText = document.getElementById("message").value;        
-const stringLength = Number(inputText.length);
-const inputOffset = Number(document.getElementById("offset").value);
+
+let inputText = document.getElementById("text");
+let inputOffset = document.getElementById("offset");
+let buttonCipher = document.getElementById("buttonOne");
+let buttonDecipher = document.getElementById("buttonTwo");
+
+buttonCipher.addEventListener("click", callEncode);
+buttonDecipher.addEventListener("click", callDecode);
 
 function callEncode() {
-    document.getElementById("resposta").innerHTML = cipher.cifrar(inputText, stringLength, inputOffset);
+    document.getElementById("resposta").innerHTML = cipher.cifrar(inputText.value, Number(inputOffset.value));
 }
 
 function callDecode() {
-    document.getElementById("resposta").innerHTML = cipher.decifrar(inputText, stringLength, inputOffset);
+    document.getElementById("resposta").innerHTML = cipher.decifrar(inputText.value, Number(inputOffset.value));
 }
    
-const buttonCipher = document.getElementById("buttonOne");
-buttonCipher.addEventListener("click", callEncode);
-
-const buttonDecipher = document.getElementById("buttonTwo");
-buttonDecipher.addEventListener("click", callDecode);
 
 /* usar animação para a caixa de resposta (easy out) */
 //keyframe animação css
