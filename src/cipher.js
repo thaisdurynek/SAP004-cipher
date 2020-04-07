@@ -1,19 +1,22 @@
 const cipher = {
-    /*encode: function(){ 
+    cifrar: function cifrar(inputText, stringLength, inputOffset) {
+        let cifrado = ""; 
         for (let i=0; i < stringLength; i++) {
             let calcEncode = ((inputText.charCodeAt(i) - 65 + inputOffset)% 26 + 65);
-            let cifrado = String.fromCharCode(calcEncode);
-            document.write(cifrado);
+            cifrado += String.fromCharCode(calcEncode);
           } 
+        return cifrado;
     }, 
 
-    decode: function(){
+    decifrar: function decifrar(inputText, stringLength, inputOffset) {
+        let decifrado = "";
         for (let cont=0; cont < stringLength; cont++) {
-            let calcDecode = ((inputText.charCodeAt(cont) - 65 - inputOffset)% 26 + 65);
-            let decifrado = String.fromCharCode(calcDecode);
-            document.write(decifrado);
+            let calcDecode = ((inputText.charCodeAt(cont) - 90 - inputOffset)% 26 + 90);
+            decifrado += String.fromCharCode(calcDecode);
         }
-    } */
+        return decifrado;
+    } 
 };
 
 export default cipher;
+
