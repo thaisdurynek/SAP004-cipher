@@ -9,19 +9,21 @@ let buttonCipher = document.getElementById("buttonOne");
 let buttonDecipher = document.getElementById("buttonTwo");
 
 /*Funções que chamam o objeto cipher e colocam o return dentro do HTML*/
-function callEncode() {
+function callEncode(event) {
     document.getElementById("resposta").innerHTML = cipher.encode(Number(inputOffset.value), inputText.value);
+    event.preventDefault();
 }
 
-function callDecode() {
+function callDecode(event) {
     document.getElementById("resposta").innerHTML = cipher.decode(Number(inputOffset.value), inputText.value);
+    event.preventDefault();
 }
+
 
 /*Evento que é disparado ao clicar nos botões*/
 buttonCipher.addEventListener("click", callEncode);
 buttonDecipher.addEventListener("click", callDecode);
 
 
-
 /* usar animação para a caixa de resposta (easy out) */
-//keyframe animação css
+/*keyframe animação css*/

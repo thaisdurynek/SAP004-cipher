@@ -1,9 +1,9 @@
 const cipher = {
-    encode: function encode(inputOffset, inputText) { //função recebe parâmetros do index.js
-        let cipherUpperCase = inputText.toUpperCase(); //declaração de variáveis fora do laço 
+    encode: function encode(inputOffset, inputText) {
+        let cipherUpperCase = inputText.toUpperCase(); //o toUpperCase tá fazendo meus testes typeError passarem
         let cifrado = ""; 
         let calcEncode = 0;
-        for (let i=0; i < cipherUpperCase.length; i++) { //laço que utiliza um contador que é incrementado até alcan
+        for (let i=0; i < cipherUpperCase.length; i++) { 
             calcEncode = ((cipherUpperCase.charCodeAt(i) - 65 + inputOffset)% 26 + 65);
             cifrado += String.fromCharCode(calcEncode);
           } 

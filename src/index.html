@@ -26,17 +26,17 @@
       <section>
         <form>
             <label>Bilhete <br>
-              <input type="text" id="text" name="msg" required><br>
+              <input type="text" id="text" required><br>
             </label>
         
             <label>Qual é a chave? <br>
-                <input type="number" id="offset" name="offset" required><br>
+                <input type="number" id="offset" required><br>
             </label>
-    
             <button id="buttonOne">Cifrar</button>
             <button id="buttonTwo">Decifrar</button>
         </form>
-        <p id="resposta"></p>
+        
+        <p id="resposta">0</p>
       </section>
       
       </main>
@@ -49,3 +49,7 @@
   </body>
 </html>
 
+<!--Importante!
+      A tag button dentro do form tem um comportamento padrão (default) de submit.
+    Ou seja, ele envia as coisas para algum lugar e recarrega a página.
+    Por isso meu cifrado/decifrado estava sendo printado apenas por alguns segundos.-->
