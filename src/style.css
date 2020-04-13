@@ -1,5 +1,5 @@
 body {
-    background-image: url("spaaace.jpg");
+    background-image: url("stormtroopers.jpg");
     background-size: cover;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,35 +9,47 @@ body {
 }
 
 main {
-    background: #eeeeee;
+    background: #e6e4e4f5;
     border-radius: 6px;
     display: flex;
-    padding: 25px 45px;
-    width: 600px;
+    padding: 30px 45px;
+    width: 620px;
     margin: auto;
     text-align: justify;
 }
 
+header {
+    margin: auto;
+    padding: 10px 15px;
+}
+
 section {
-    padding-left: 20px;
-    margin: 20px;
-    padding-top: 20px;
+    vertical-align: top;
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 45px;
+    margin: 20px 0px;
+}
+
+label {
+    padding: 10px 0px;
+    margin: 5px 0px;
 }
 
 input {
     border: 1px solid white;       
     background-color: white;            
     border-radius: 5px; 
-    padding: 5px 20px;
-    margin: 5px 0px; 
+    padding: 8px 30px;
+    margin: 10px 0px; 
     outline: 0px;
 }
 
-/*input:focus {
+input:focus {
     background-color: white;
     color: black;
-    border-bottom: 1px solid rgba(97, 45, 97, 0.596);
-} */
+    border-bottom: 2px solid rgba(97, 45, 97, 0.596);
+} 
 
 button {
     color: white;
@@ -45,9 +57,18 @@ button {
     border-radius: 5px;
     background-color: rgb(97, 45, 97);
     padding: 5px 10px;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
+button:hover {
+    color: white;
+    background-color: rgb(73, 31, 73);
+}
+
+.resultado {
+    margin: 20px 0px;
+    padding: 10px 0px;
+}
 #resposta {
     display: flex;
     border: 1px solid white;
@@ -55,6 +76,6 @@ button {
     color: black;
     text-align: justify;
     border-radius: 5px;
-    margin: 5px 0px;
-    padding: 30px 20px;
+    margin: 10px 0px;
+    padding: 40px 20px;
 }

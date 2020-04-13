@@ -8,14 +8,15 @@ let inputOffset = document.getElementById("offset");
 let buttonCipher = document.getElementById("buttonOne");
 let buttonDecipher = document.getElementById("buttonTwo");
 
+
 /*Funções que chamam o objeto cipher e colocam o return dentro do HTML*/
 function callEncode(event) {
-    document.getElementById("resposta").innerHTML = cipher.encode(Number(inputOffset.value), inputText.value);
+    document.getElementById("resposta").innerHTML = cipher.encode(parseInt(inputOffset.value), inputText.value);
     event.preventDefault();
-}
+} 
 
 function callDecode(event) {
-    document.getElementById("resposta").innerHTML = cipher.decode(Number(inputOffset.value), inputText.value);
+    document.getElementById("resposta").innerHTML = cipher.decode(parseInt(inputOffset.value), inputText.value);
     event.preventDefault();
 }
 
